@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juego Simon</title>
+        <!-- Fuente - Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Original+Surfer&effect=emboss" type="text/css">
+        <!-- Estilos - Styles -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" id="clip-1"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" id="clip-2"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" id="clip-3"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" id="clip-4"></audio>
+    </head>
+    <body>
+        <div id="circulo-externo">
+            <div id="arriba-izquierda"></div>
+            <div id="arriba-derecha"></div>
+            <div id="abajo-izquierda"></div>
+            <div id="abajo-derecha"></div>
+            <div id="circulo-interno">
+                <div id="titulo" class="font-effect-emboss">SIMON!</div>
+                <div id="interruptores">
+                    <input type="checkbox" class="interruptor" id="encendido">
+                    <button class="boton" id="iniciar">Iniciar</button>
+                    <input type="checkbox" class="interruptor" id="estricto">
+                </div>
+                <div class="texto-1">
+                    <span>Prendido</span> 
+                    <span>Estricto</span>
+                </div>
+                <div id="turno"></div>
+                <div class="texto-2">Contador</div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
