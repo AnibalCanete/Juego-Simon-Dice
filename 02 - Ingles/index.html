@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juego Simon</title>
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Original+Surfer&effect=emboss" type="text/css">
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" id="clip1"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" id="clip2"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" id="clip3"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" id="clip4"></audio>
+    </head>
+    <body>
+        <div id="outer-circle">
+            <div id="top-left"></div>
+            <div id="top-right"></div>
+            <div id="bottom-left"></div>
+            <div id="bottom-right"></div>
+            <div id="inner-circle">
+                <div id="title" class="font-effect-emboss">SIMON!</div>
+                <div id="switches">
+                    <input type="checkbox" class="toggle" id="on">
+                    <button class="button" id="start">Start</button>
+                    <input type="checkbox" class="toggle" id="strict">
+                </div>
+                <div class="text1">
+                    <span>POWER</span> 
+                    <span>STRICT</span>
+                </div>
+                <div id="turn"></div>
+                <div class="text2">COUNT</div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
